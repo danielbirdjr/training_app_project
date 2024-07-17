@@ -1,0 +1,253 @@
+:root {
+    --almost-black: rgb(18, 18, 18);
+    --light-gray: rgb(195, 195, 195);
+    --dark-gray: rgb(23, 23, 23);
+    --white: rgb(255, 255, 255);
+    --med-gray: rgb(117, 117, 117);
+    --border-gray: rgb(42, 42, 42);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    background-color: var(--almost-black);
+    color: var(--white);
+}
+
+/* Nav Bar */
+.nav_bar_wrapper {
+    width: 100%;
+    background-color: var(--almost-black);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 2px var(--dark-gray) solid;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.signin_buttons {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.btn {
+    padding: .5rem 1.5rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    border: 1px var(--white) solid;
+    cursor: pointer;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+.signin_buttons a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+
+/* Main Page */
+section {
+    margin: 2.5rem 3rem;
+}
+
+.first_section {
+    margin-top: 7.5rem;
+}
+
+.home_text {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+    color: var(--light-gray);
+}
+
+.home_text_heading {
+    width: 50%;
+    font-size: 2.5rem;
+}
+
+.home_text_and_button {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_text_and_button p {
+    line-height: 1.75rem;
+    color: var(--light-gray);
+}
+
+.home_text_and_button button {
+    margin-top: 2rem;
+    width: fit-content;
+}
+
+.home_image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--dark-gray);
+    height: 24rem;
+    border-radius: 4rem;
+}
+
+/* .home_image img {
+    
+}  */
+
+.btn:hover {
+    border: 1px var(--light-gray), solid;
+    cursor: pointer;
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
+}
+
+/* Log In Page */
+.login_page{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.login_frame {
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    width: 30rem;
+    border: 1px var(--border-gray) solid;
+    border-radius: 1rem;
+}
+
+.login_container{
+    margin: 1.5rem 1rem 1rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_container p{
+    color: var(--med-gray);
+}
+
+.login_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.login_title h1 {
+    font-weight: 600;
+}
+
+.login_title p{
+    color: var(--light-gray);
+}
+
+.login_fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_fields input, button{
+    font-size: 1rem;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.login_fields input{
+    border: 1px var(--border-gray) solid;
+    background-color: var(--dark-gray);
+}
+
+.login_fields button{
+    border: 1px var(--dark-gray) solid;
+    background-color: var(--white);
+    color: var(--almost-black);
+    font-weight: 550;
+    margin-bottom: 0;
+}
+
+.login_fields button:hover{
+    cursor: pointer;
+}
+
+.forgot_password_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.forgot_password_container a{
+    text-decoration: none;
+    color: var(--med-gray);
+    font-size: 14px;
+}
+
+.forgot_password_container a:hover{
+    color: var(--white);
+}
+
+.line{
+    width: 100%;
+    border: 1px var(--dark-gray) solid;
+    margin-bottom: 1.5rem;
+}
+
+.sign_up_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign_up_container button{
+    font-size: 1rem;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px var(--border-gray) solid;
+    background-color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+.sign_up_container p{
+    font-size: 14px;
+}
+
+.sign_up_container button:hover{
+    cursor: pointer;
+}
