@@ -195,19 +195,19 @@ section {
     flex-direction: column;
 }
 
-.login_fields input, button{
+.login_fields input, button {
     font-size: 1rem;
     padding: 0.9rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
 
-.login_fields input{
+.login_fields input {
     border: 1px var(--border-gray) solid;
     background-color: var(--dark-gray);
 }
 
-.login_fields button{
+.login_fields button {
     border: 1px var(--dark-gray) solid;
     background-color: var(--white);
     color: var(--almost-black);
@@ -215,40 +215,40 @@ section {
     margin-bottom: 0;
 }
 
-.login_fields button:hover{
+.login_fields button:hover {
     cursor: pointer;
 }
 
-.forgot_password_container{
+.forgot_password_container {
     display: flex;
     justify-content: center;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.forgot_password_container a{
+.forgot_password_container a {
     text-decoration: none;
     color: var(--med-gray);
     font-size: 14px;
 }
 
-.forgot_password_container a:hover{
+.forgot_password_container a:hover {
     color: var(--white);
 }
 
-.line{
+.line {
     width: 100%;
     border: 1px var(--dark-gray) solid;
     margin-bottom: 1.5rem;
 }
 
-.signup_container_bottom{
+.signup_container_bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.signup_container_bottom button{
+.signup_container_bottom button {
     font-size: 1rem;
     padding: 0.9rem;
     border-radius: 0.5rem;
@@ -257,16 +257,16 @@ section {
     margin-bottom: 0;
 }
 
-.signup_container_bottom p{
+.signup_container_bottom p {
     font-size: 14px;
 }
 
-.signup_container_bottom button:hover{
+.signup_container_bottom button:hover {
     cursor: pointer;
 }
 
 /* Sign Up Specific Page */
-.signup_container p{
+.signup_container p {
     color: var(--med-gray);
 }
 
@@ -294,4 +294,6 @@ section {
     font-size: 14px;
     margin-bottom: 1.5rem;
 }
+
+
 
