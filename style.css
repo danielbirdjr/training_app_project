@@ -35,6 +35,11 @@
     padding: 1.5rem 3rem;
 }
 
+.logo {
+    width: 14.75rem;
+    text-align: left;
+}
+
 .logo a {
     text-decoration: none;
     font-size: 1.25rem;
@@ -46,6 +51,8 @@
     display: flex;
     list-style: none;
     gap: 3rem;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .nav_links li a {
@@ -58,6 +65,8 @@
     display: flex;
     gap: 3rem;
     align-items: center;
+    width: 14.75rem;
+    justify-content: flex-end;
 }
 
 .btn {
@@ -140,12 +149,12 @@ section {
 }
 
 /* Log In Page */
-.login_page{
+.login_page, .signup_page {
     display: flex;
     justify-content: center;
     margin-top: 10rem;
 }
-.login_frame {
+.login_frame, .signup_frame {
     display: flex;
     align-items: center;
     height: 30rem;
@@ -154,7 +163,7 @@ section {
     border-radius: 1rem;
 }
 
-.login_container{
+.login_container, .signup_container {
     margin: 1.5rem 1rem 1rem 1rem;
     width: 100%;
     display: flex;
@@ -165,7 +174,7 @@ section {
     color: var(--med-gray);
 }
 
-.login_title{
+.login_title, .signup_title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,11 +186,11 @@ section {
     font-weight: 600;
 }
 
-.login_title p{
+.login_title p {
     color: var(--light-gray);
 }
 
-.login_fields{
+.login_fields, .signup_fields {
     display: flex;
     flex-direction: column;
 }
@@ -233,13 +242,13 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.sign_up_container{
+.signup_container_bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.sign_up_container button{
+.signup_container_bottom button{
     font-size: 1rem;
     padding: 0.9rem;
     border-radius: 0.5rem;
@@ -248,10 +257,41 @@ section {
     margin-bottom: 0;
 }
 
-.sign_up_container p{
+.signup_container_bottom p{
     font-size: 14px;
 }
 
-.sign_up_container button:hover{
+.signup_container_bottom button:hover{
     cursor: pointer;
 }
+
+/* Sign Up Specific Page */
+.signup_container p{
+    color: var(--med-gray);
+}
+
+.signup_title h1 {
+    font-weight: 600;
+}
+
+.signup_title p {
+    color: var(--light-gray);
+}
+
+.signup_fields input{
+    font-size: 1rem;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.signup_fields input{
+    border: 1px var(--border-gray) solid;
+    background-color: var(--dark-gray);
+}
+
+.signup_fields p {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+}
+
