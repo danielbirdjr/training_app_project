@@ -76,6 +76,10 @@
     font-size: 1rem;
 }
 
+.signup_btn {
+    margin: 0;
+}
+
 
 /* Main Page */
 section {
