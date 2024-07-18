@@ -35,9 +35,9 @@
                     <p>Sign in to access your account</p>
                 </div>
                 <div class="signin_fields">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button>Sign In</button>
+                    <input type="email" id="signin-email" placeholder="Email">
+                    <input type="password" id="signin-password" placeholder="Password">
+                    <button id="signin-button">Sign In</button>
                 </div>
                 <div class="forgot_password_container">
                     <p><a href="/forgot-password.html">Forgot password?</a></p>
@@ -50,6 +50,8 @@
             </div>
         </div>
     </section>
-    
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="auth.js"></script>
 </body>
 </html>

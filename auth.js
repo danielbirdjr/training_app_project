@@ -1,31 +1,62 @@
-document.getElementById('signupForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+import { auth } from './firebase.js';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
 
-    // Store user data (in localStorage for simplicity)
-    localStorage.setItem('username', username);
-    localStorage.setItem('email', email);
-    localStorage.setItem('password', password);
+// Sign-Up Function
+document.getElementById('signup-button').addEventListener('click', function() {
+    const email = document.getElementById('signup-email').value;
+    const password = document.getElementById('signup-password').value;
 
-    // Redirect to dashboard
-    window.location.href = 'dashboard.html';
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in 
+            var user = userCredential.user;
+            alert('User signed up successfully');
+            // Redirect to dashboard
+            window.location.href = 'dashboard.html';
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+        });
 });
 
-function logout() {
-    localStorage.clear();
-    window.location.href = 'index.html';
-}
+// Signin Function
+document.getElementById('signin-button').addEventListener('click', function() {
+    const email = document.getElementById('signin-email').value;
+    const password = document.getElementById('signin-password').value;
 
-document.addEventListener('DOMContentLoaded', function() {
-    const usernameDisplay = document.getElementById('usernameDisplay');
-    if (usernameDisplay) {
-        const username = localStorage.getItem('username');
-        if (username) {
-            usernameDisplay.textContent = username;
-        } else {
-            window.location.href = 'index.html';
-        }
-    }
+    signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in 
+            var user = userCredential.user;
+            alert('User logged in successfully');
+            // Redirect to dashboard
+            window.location.href = 'dashboard.html';
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+        });
+});
+
+// Google Sign-In Function
+document.getElementById('google-signin-button').addEventListener('click', function() {
+    var provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+        .then((result) => {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            alert('User signed in with Google successfully');
+            // Redirect to dashboard
+            window.location.href = 'dashboard.html';
+        }).catch((error) => {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+        });
 });
