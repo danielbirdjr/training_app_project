@@ -108,7 +108,8 @@ section {
 
 .home_text_heading {
     width: 50%;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 800;
 }
 
 .home_text_and_button {
