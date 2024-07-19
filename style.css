@@ -417,13 +417,13 @@ section {
 
 .price_card_line {
     width: 100%;
-    border: 1px var(--med-gray) solid;
+    border: 1px var(--light-gray) solid;
 }
 
 .price_feature_list {
     background-color: var(--white);
     margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
 }
 
 .price_feature {
