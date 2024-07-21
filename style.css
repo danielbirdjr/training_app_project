@@ -5,6 +5,7 @@
     --white: rgb(255, 255, 255);
     --med-gray: rgb(117, 117, 117);
     --border-gray: rgb(42, 42, 42);
+    --almost-white: rgb(227, 227, 227);
 }
 
 * {
@@ -451,4 +452,49 @@ section {
 
 .price_card button:hover {
     background-color: var(--border-gray);
+}
+
+/* About Page */
+
+.about_section_framer {
+    display: flex;
+    gap: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.about_section_image img {
+    /* height: 38rem; */
+    height: 80vh;
+    border-radius: 1rem;
+}
+
+.about_section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.about_section_text .first_h4 {
+    margin-top: 0;
+}
+
+.about_section_text h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--almost-white);
+}
+
+.about_section_text h2 {
+    font-size: 2.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.about_section_text p {
+    line-height: 1.6em;
+    margin-top: 0.625rem;
+    color: var(--almost-white);
 }
