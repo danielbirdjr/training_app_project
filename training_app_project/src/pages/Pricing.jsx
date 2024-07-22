@@ -9,7 +9,6 @@ const Pricing = () => {
                 <div className="price_card">
                     <h2>Basic</h2>
                     <div className="price_discount">
-                        //<p className="price original_price">$40</p>
                         <p className="price">$9</p>
                     </div>
                     <small className="per_month">per month</small>
@@ -41,7 +40,6 @@ const Pricing = () => {
                 <div className="price_card">
                     <h2>Premium</h2>
                     <div className="price_discount">
-                        //<p class="price original_price">$150</p> 
                         <p className="price">$79</p>
                     </div>
                     <small className="per_month">per month</small>
